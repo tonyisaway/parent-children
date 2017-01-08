@@ -62,11 +62,19 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="ParentChildrenRelationshipTester.cs" />
+    <Compile Include="ClientServiceTester.cs" />
+    <Compile Include="ClientTaskServiceBase.cs" />
+    <Compile Include="ClientTasksRelationshipTester.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{D4C1624B-9F52-4036-8130-99D5A03C0D83}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
